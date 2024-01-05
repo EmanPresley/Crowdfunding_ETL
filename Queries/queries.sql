@@ -13,7 +13,7 @@ where outcome='successful'
 group by category.category_id, outcome
 order by count(outcome)desc;
 
---3. List the contact_id forcontacts whose last name begins with letter B along with company_name
+--3. List the contact_id for contacts whose last name begins with letter B along with company_name
 select contacts.contact_id, contacts.last_name, campaign.company_name
 from contacts
 join campaign
